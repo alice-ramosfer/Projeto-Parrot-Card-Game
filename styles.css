@@ -1,0 +1,90 @@
+body {
+  background-color: #eef9bf;
+}
+
+.conteudo  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+}
+.titulo {
+  position: absolute;
+  top:40px;
+  font-size: 56px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #75B79E;
+
+}
+
+.mesa_das_cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.cartas {
+  width: 117px;
+  height: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* perspective: 1000px; */
+  /* cursor: pointer; */
+  border-radius: 5px;
+  border: 1px solid #99CEA8;  
+  background-color:#A7E9AF ;
+  top: 150px;
+  margin-left: 44px;
+  margin-top: 34px;
+
+
+
+}
+
+.cartas img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.cartas .face-atras {
+  transform: rotateY(0deg);
+}
+
+.cartas .face-frente {
+  transform: rotateY(180deg);
+}
+
+.virar .face-atras {
+  transform: rotateY(180deg);
+}
+
+.virar .face-frente {
+  transform: rotateY(0deg);
+}
+
+.igualdade {
+  pointer-events: none;
+}
+
+@media(max-width: 645px){
+  .titulo{
+    width: 312px;
+    height: 63px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .mesa_das_cartas{
+    width: 200px;
+    height: 160px;
+  }
+}
