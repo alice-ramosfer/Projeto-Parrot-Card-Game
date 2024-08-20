@@ -35,17 +35,12 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* perspective: 1000px; */
-  /* cursor: pointer; */
   border-radius: 5px;
   border: 1px solid #99CEA8;  
   background-color:#A7E9AF ;
   top: 150px;
   margin-left: 44px;
   margin-top: 34px;
-
-
-
 }
 
 .cartas img {
